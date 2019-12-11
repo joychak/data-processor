@@ -1,0 +1,17 @@
+[
+    {
+        "namespace": "com.datalogs.dataschema",
+        "type": "record",
+        "name": "SampleDatasetCsv",
+        "doc": "",
+        "fields": [
+            { "name": "id", "type": "int", "doc": "" },
+            { "name": "field1", "type": "string", "doc": "" },
+            { "name": "field2", "type": ["null", "string"], "doc": "OPTIONAL:  " },
+            { "name": "field3", "type": "int", "doc": " " },
+            { "name": "field4", "type": "string", "doc": "" },
+            { "name": "utcDatetime", "type": "string", "doc": "U" },
+            { "name" :"metaInfo", "type" : "com.datalogs.dataschema.MetaInfo" }
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "namespace": "com.datalogs.dataschema",
+        "type": "record",
+        "name": "SampleDatasetJson",
+        "doc": "",
+        "fields": [
+            { "name": "id", "type": "int", "doc": "" },
+            { "name": "field1", "type": "string", "doc": "" },
+            { "name": "field2", "type": ["null", "string"], "doc": "OPTIONAL:  " },
+            { "name": "field3", "type": "string", "doc": " " },
+            { "name": "field4", "type": "string", "doc": "" },
+            { "name": "field5", "type": "int", "doc": "" },
+            { "name": "field6", "type": "int", "doc": "" },
+            { "name": "field7", "type": "int", "doc": "" },
+            { "name": "utcDatetime", "type": "string", "doc": "U" },
+            { "name" :"metaInfo", "type" : "com.datalogs.dataschema.MetaInfo" }
+        ]
+    }
+]

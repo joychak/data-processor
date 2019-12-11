@@ -1,0 +1,14 @@
+{
+    "namespace" : "com.datalogs.dataschema",
+    "name" : "MetaInfo",
+    "type" : "record",
+    "doc" : "",
+    "fields" : [
+      { "name" : "eventUTC", "type" : "long", "doc" : "FORMAT:milliseconds|Derived field for storing datetime value from utc_datetime field in UTC. Will be equal to processingUTC in cases where utc ts cannot be calculated" },
+      { "name" : "sourceHost", "type" : "string", "doc" : "Derived field for storing source machine name which sent us the file" },
+      { "name" : "sourceName", "type" : "string", "doc" : "Derived field for storing source filename" },
+      { "name" : "batchId", "type" : "string", "doc" : "batchId" },
+      { "name" : "processingUTC", "type" : "long", "doc" : "FORMAT:milliseconds|Derived field for storing record write time in UTC."},
+      { "name" : "isValidEventUTC", "type" : "int", "doc" : "FORMAT:0 or 1. 0 -- In Case eventts is inferred correctly. 1 -- In cases where eventUTC is defaulted to processingUTC "}
+    ]
+}
